@@ -46,13 +46,13 @@ const items = [
     desc: "A creative video advertisement designed to promote a restaurant, focusing on its food offerings and running targeted campaigns across social media platforms.",
     // link: "#Contact",
   },
-  {
-    id: 7,
-    title: "Meme Creation #1",
-    img: "/Meme.mp4",
-    desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
-    // link: "#Contact",
-  },
+  // {
+  //   id: 7,
+  //   title: "Meme Creation #1",
+  //   img: "/Meme.mp4",
+  //   desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
+  //   // link: "#Contact",
+  // },
   // {
   //   id: 8,
   //   title: "Meme Creation #2",
@@ -62,7 +62,7 @@ const items = [
   // },
   {
     id: 9,
-    title: "Meme Creation #3",
+    title: "Meme Creation",
     img: "/meme.mp4",
     desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
     // link: "#Contact",
