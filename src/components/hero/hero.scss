@@ -1,0 +1,149 @@
+.hero {
+  height: calc(100vh - 100px); /* Full height minus navbar */
+  width: 100vw; /* Full viewport width */
+  background: linear-gradient(
+    180deg,
+    #0c0c1d,
+    #111132
+  ); /* Gradient background */
+  overflow: hidden; /* Prevent overflow */
+  position: relative; /* For absolute positioning of children */
+  z-index: 1;
+
+  .wrapper {
+    max-width: 1200px; /* Max width for content */
+    height: 100%; /* Full height of hero */
+    margin: auto; /* Center the wrapper */
+    display: flex; /* Use flexbox to arrange child elements */
+    gap: 40px; /* Space between text and image containers */
+
+    .textContainer {
+      height: 100%; /* Full height of wrapper */
+      width: 50%; /* Half width of the wrapper */
+      display: flex; /* Flexbox for text content */
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center; /* Center text vertically */
+      gap: 30px; /* Space between text elements */
+      margin-left: 20px;
+
+      h2 {
+        font-size: 30px; /* Corrected font-size property */
+        color: rebeccapurple; /* Text color */
+        letter-spacing: 10px; /* Spacing between letters */
+      }
+
+      h1 {
+        font-size: 50px; /* Large main heading */
+        color: white; /* Optional: specify a color */
+      }
+
+      .buttons {
+        button {
+          padding: 10px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 10px;
+          cursor: pointer;
+          font-weight: 200;
+        }
+      }
+
+      img {
+        width: 30px; /* Set image size */
+      }
+    }
+
+    .imageContainer {
+      height: 100%; /* Full height of wrapper */
+      width: 50%; /* Half width of the wrapper */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+
+      img {
+        max-width: 100%; /* Ensure image doesn't overflow */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure the image fits within the container */
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -80px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 100vw;
+    font-weight: bold;
+    z-index: -1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .hero {
+    .wrapper {
+      gap: 20px; /* Reduce gap for tablets */
+    }
+
+    .textContainer h1 {
+      font-size: 40px; /* Reduce heading size for medium screens */
+    }
+
+    .textContainer h2 {
+      font-size: 25px; /* Reduce subheading size */
+    }
+
+    .slidingTextContainer {
+      font-size: 40vh; /* Adjust sliding text for tablets */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .wrapper {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: left; /* Center items */
+      gap: 20px; /* Reduce gap for mobile */
+      margin-left: 10px;
+
+      .textContainer {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0; /* Reset margin */
+        text-align: left; /* Center-align text on mobile */
+        gap: 10px; /* Reduce gap for mobile */
+        margin-top: 80px;
+
+        h1 {
+          font-size: 35px; /* Smaller heading on mobile */
+        }
+
+        h2 {
+          font-size: 20px; /* Smaller subheading */
+          letter-spacing: 5px; /* Adjust letter spacing */
+        }
+
+        .buttons {
+          button {
+            padding: 8px; /* Smaller button padding */
+            font-size: 14px; /* Reduce button font size */
+          }
+        }
+      }
+
+      .imageContainer {
+        width: 100%; /* Full width on mobile */
+        justify-content: center; /* Center image on mobile */
+      }
+
+      .slidingTextContainer {
+        font-size: 20vh; /* Smaller sliding text on mobile */
+        bottom: -40px; /* Adjust positioning */
+      }
+    }
+  }
+}

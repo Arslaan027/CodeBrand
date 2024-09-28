@@ -1,0 +1,192 @@
+@import "../../app.scss";
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+      text-align: center;
+      justify-content: center;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      color: gray;
+      text-align: right;
+
+      @include mobile {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 0.5px solid gray;
+      width: 100px;
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      img {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+
+        @include mobile {
+          width: 105px;
+          height: 35px;
+        }
+      }
+
+      h1 {
+        font-size: 46px;
+        font-weight: 100;
+
+        @include mobile {
+          font-size: 26px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+
+        @include mobile {
+          width: 105px;
+          height: 35px;
+          font-size: 10px;
+        }
+
+        &:hover {
+          background-color: rgb(221, 159, 44);
+        }
+      }
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: flex;
+    min-width: 1024px;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+
+    @include mobile {
+      min-width: 365px;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .box {
+      padding: 30px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // Center content vertically
+      align-items: center; // Center content horizontally
+      text-align: center; // Center text content
+      width: 240px;
+      height: auto;
+
+      @include mobile {
+        width: 250px;
+        padding: 15px;
+      }
+
+      &:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: white;
+        margin-bottom: 1rem;
+
+        @include mobile {
+          font-size: 1.4rem;
+          color: rgb(253, 253, 181);
+        }
+      }
+
+      ul {
+        @include mobile {
+          text-align: center;
+        }
+      }
+
+      // Button styling
+      button {
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 0.5rem 1.25rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          width: auto;
+          padding: 0.5rem;
+          background: transparent;
+          border: 0.5px solid yellow;
+        }
+
+        &:hover {
+          background-color: rgb(175, 116, 6);
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center; // Center anchor text within the button
+        }
+      }
+    }
+  }
+}

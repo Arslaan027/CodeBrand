@@ -1,0 +1,13 @@
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0.5px solid white;
+  position: fixed;
+  z-index: 999;
+
+  /* Hide the cursor on mobile devices */
+  @media (max-width: 480px) {
+    display: none; /* Hide for tablets and smaller devices */
+  }
+}

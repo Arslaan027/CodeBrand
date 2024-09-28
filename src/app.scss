@@ -1,0 +1,100 @@
+// ==============SCROLLBAR===================
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 50px;
+  border: 8px solid #f1f1f1;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0c0c1d #0c0c1d;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+// =================================
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  // scroll-snap-align: center;
+}
+
+body {
+  background: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// =============
+// ==============SCROLLBAR===================
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 50px;
+  border: 8px solid #f1f1f1;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0c0c1d #0c0c1d;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+// =================================
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  // scroll-snap-align: center;
+}
+
+body {
+  background: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// =============
+@mixin mobile {
+  @media (max-width: 768px) {
+    // Standard mobile breakpoint
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

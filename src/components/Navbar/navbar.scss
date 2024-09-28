@@ -1,0 +1,93 @@
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 1200px; /* Decreased max-width */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This ensures that codebrand and nav-links are spaced */
+    height: 100%;
+
+    .codebrand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+    }
+
+    a {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  /* Responsive for mobile screens */
+  @media (max-width: 768px) {
+    height: 80px; /* Decrease the height for mobile */
+
+    .wrapper {
+      flex-direction: row; /* Stack content vertically on mobile */
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 80px;
+      font-weight: 1000;
+
+      .codebrand {
+        margin-bottom: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column; /* Stack nav-links vertically on mobile */
+        gap: 15px;
+      }
+
+      .social {
+        margin-top: 10px;
+      }
+
+      a {
+        gap: 5px; /* Reduce gap between icons and links */
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 60px; /* Further reduce height for very small devices */
+
+    .wrapper {
+      padding: 0 10px;
+
+      .codebrand {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+      }
+
+      .nav-links {
+        gap: 10px;
+        font-size: 14px;
+      }
+
+      .social {
+        gap: 5px;
+      }
+
+      a img {
+        width: 14px; /* Make icons smaller */
+        height: 14px;
+      }
+    }
+  }
+}
