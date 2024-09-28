@@ -3,6 +3,7 @@ import "./contact.scss";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { AiOutlineCopy } from "react-icons/ai"; // Import the copy icon
+import me from "../../../public/me.jpg";
 
 const variants = {
   initial: {
@@ -61,7 +62,11 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let's work together</motion.h1>
+        <motion.h1 variants={variants}>
+          {" "}
+          <img src={me} alt="" />
+          Let's work together
+        </motion.h1>
 
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>

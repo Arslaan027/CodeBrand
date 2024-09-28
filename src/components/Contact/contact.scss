@@ -13,12 +13,21 @@
     gap: 30px;
 
     h1 {
+      display: flex;
       font-size: 80px;
       line-height: 65px;
+      gap: 10px;
+      border-radius: 15px;
+      padding: 10px;
+
+      img {
+        display: none; // Hidden on desktop
+      }
     }
 
     span {
       font-weight: 200;
+      display: flex;
     }
   }
 
@@ -59,14 +68,21 @@
     .textContainer {
       width: 290px;
       padding-top: 100px;
-      // max-height: 50vh;
       max-height: 40vh;
+
       h1 {
         font-size: 40px;
-        // color: yellow;
         line-height: 30px;
         width: 250px;
+
+        img {
+          display: block; // Show image on mobile
+          height: 60px;
+          width: 100px;
+          border-radius: 50%;
+        }
       }
+
       span {
         font-size: 20px;
         display: flex;
@@ -94,6 +110,10 @@
       h1 {
         font-size: 36px;
         line-height: 40px;
+
+        img {
+          display: block; // Show image on smaller mobile screens
+        }
       }
     }
 
