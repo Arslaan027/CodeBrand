@@ -55,11 +55,16 @@
     gap: 20px;
 
     .textContainer {
-      max-height: 50lvh;
+      max-height: 50vh;
+      max-height: 30vh;
       h1 {
         font-size: 30px;
         line-height: 30px;
         width: 250px;
+      }
+      span {
+        font-size: 20px;
+        display: flex;
       }
     }
 
