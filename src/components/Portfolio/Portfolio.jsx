@@ -53,13 +53,13 @@ const items = [
     desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
     // link: "#Contact",
   },
-  {
-    id: 8,
-    title: "Meme Creation #2",
-    img: "/Meme2.mp4",
-    desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
-    // link: "#Contact",
-  },
+  // {
+  //   id: 8,
+  //   title: "Meme Creation #2",
+  //   img: "/Meme2.mp4",
+  //   desc: "A fun and engaging meme creation project aimed at leveraging viral content to boost brand visibility and connect with a younger audience through humor on social media.",
+  //   // link: "#Contact",
+  // },
   {
     id: 9,
     title: "Meme Creation #3",
