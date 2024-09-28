@@ -51,12 +51,15 @@
 
   // Mobile responsiveness
   @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
 
     .textContainer {
-      max-height: 50vh;
-      max-height: 30vh;
+      margin-top: 100px;
+      // max-height: 50vh;
+      max-height: 35vh;
       h1 {
         font-size: 30px;
         line-height: 30px;
