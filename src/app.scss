@@ -83,7 +83,7 @@ section {
   height: 100vh;
   // scroll-snap-align: center;
   @include mobile {
-    height: 80vh; // Set to a smaller height for mobile devices
+    height: 90vh; // Set to a smaller height for mobile devices
   }
 }
 
@@ -98,7 +98,3 @@ a {
 }
 
 // =============
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
