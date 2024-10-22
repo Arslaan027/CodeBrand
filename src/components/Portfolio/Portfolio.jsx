@@ -33,13 +33,6 @@ const items = [
     link: "https://sigmasolution.onrender.com/",
   },
   {
-    id: 5,
-    title: "Company Website",
-    img: "https://thumbs.dreamstime.com/b/ecology-eco-friendly-business-web-banner-landing-page-people-taking-care-nature-protect-environment-green-energy-210562773.jpg",
-    desc: "A website developed for an environmental technology company focused on producing eco-friendly devices and solutions for sustainable development.",
-    link: "https://www.enggenv.com/",
-  },
-  {
     id: 6,
     title: "Video Advertisement",
     img: "/VideoAdd.mp4",
