@@ -4,11 +4,33 @@ import { useRef } from "react";
 
 // Portfolio items array
 const items = [
-    {
+  {
     id: 1,
     title: "Next Hire Recruitment",
     img: "/nexthire.png",
-    desc: "This is a Full responsive UK Based Client's website for Job Posting and Hiring for there B2B Business. Along with there Admin dashboard for controlling full website with No-code",
+    desc: (
+      <>
+        This is a fully responsive UK-based client's website for Job Posting and Hiring for their B2B business,
+        along with an Admin Dashboard for managing the entire platform with No-Code.
+        <a
+          href="https://admin.nexthirerecruitment.co.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "#000",
+            background: "#FFA500",
+            padding: "3px 7px",
+            borderRadius: "3px",
+            fontWeight: 400,
+            fontSize: "12px",
+            marginLeft: "6px",
+            display: "inline-block",
+          }}
+        >
+          Click to Check
+        </a>
+      </>
+    ),
     link: "https://nexthirerecruitment.co.uk/",
   },
   {
@@ -119,7 +141,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>See More</button>
+              <button>Project Link</button>
             </a>
           </motion.div>
         </div>
